@@ -291,7 +291,7 @@
             timerDisplay.style.display = "block";
             scoreDisplay.style.display = "block";
             startButton.style.display = "none";
-            exitButton.style.display = "inline-block";
+            // exitButton.style.display = "inline-block";
             nextLevel.style.display = "none";  // Ocultar botón de siguiente nivel
             levelDisplay.style.display = "block";
         }
@@ -310,13 +310,15 @@
             startButton.style.display = "inline-block";
 
             // Ocultar elementos del menu principal
-            exitButton.style.display = "none";
+            // exitButton.style.display = "none";
             scoreDisplay.style.display = "none";
             nextLevelButton.style.display = "none";
             levelDisplay.style.display = "none";
 
             score = 0;
             level = 1;
+
+            location.reload();
         }
 
         const backgroundImage = new Image();
